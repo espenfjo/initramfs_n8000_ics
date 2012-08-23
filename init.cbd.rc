@@ -1,11 +1,4 @@
-#service cpboot-daemon /sbin/cbd -d
-#    class main
-#    user root
-#    group radio cache inet misc audio sdcard_rw
-
-# AT Distributor for factory test
-service at_distributor /system/bin/at_distributor
+service cpboot-daemon /sbin/cbd -d -p 8
     class main
     user root
-    group radio log
-
+    group radio cache inet misc audio sdcard_rw
